@@ -1,0 +1,985 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1400px;
+    overflow-x: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section{
+    max-width: 1200px;
+    position: relative;
+    margin: 0px auto;
+    background-color: white;
+}
+#home,.container-fluid,.carousel-item{
+    height: 520px;
+}
+.brand{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.ml{
+    margin-left: 250px;
+}
+nav{
+    max-width: 1200px;
+    z-index: 10;
+}
+.nav{
+    margin-right: 220px;
+}
+.nav-item .nav-link:visited{
+    color: yellow;
+}
+.navbar-toggler{
+    display: none;
+}
+.carousel-inner{
+    width: 102%;
+    height: 520px;
+    left: -15px;
+    top: -65px;
+}
+.carousel-inner img{
+    width: 1200px;
+    height: 520px;
+}
+#home div h3{
+    max-width: 400px;
+    position: absolute;
+    top: 25%;
+    left: 30px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 35px;
+    z-index: 10;
+}
+#home div p{
+   position: absolute;
+   top: 40%;
+   left: 2.5%;
+   max-width: 320px;
+   color: cornsilk;
+   z-index: 10;
+}
+.button{
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 15px;
+    left:2.5%
+}
+.btnyellow{
+    background-color: yellow;
+    margin-top: 20px;
+    border: 1px solid yellow;
+}
+.btnyellow:hover{
+    color: cornsilk;
+    background-color: purple;
+    border: 1px solid purple;
+}
+.btn-home{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+}
+
+/* Welcome*/
+#welcome{
+    height: 700px;
+}
+#welcome .container{
+    margin: 0px 100px;
+}
+h1{
+    text-align: center;
+    padding:40px;
+    font-size: xx-large;
+}
+#welcome h1{
+    margin-left: -130px;
+}
+.welcomeInfo{
+    max-width: 390px;
+    margin-left: 160px;
+    margin-top: 50px;
+}
+.welcomeInfo img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 65%;
+    top: 20%;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+.grid{
+    display:grid;
+    grid-template-columns: repeat(3,250px);
+    position: relative;
+    left:90px;
+    max-width: 720px;
+    border-bottom: 1px solid black;
+}
+.cards{
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 6%;
+    margin-left: 18px;
+    padding: 25px;   
+}
+.cards1,.cards2,.cards3{
+    border: none;
+    line-height: 15px;
+}
+.cards h4{
+    color: purple;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+.cards div{
+    width: 29%;
+    height: 15%;
+    border-radius: 50%;
+    background-color: purple;
+    margin-left: 37%;
+}
+.cards img{
+    margin: 10px auto;
+}
+
+/*projects*/
+#projects{
+    height: 600px;
+}
+.gridpro{
+    margin-left: -134px;
+    grid-template-columns: repeat(5,240px);
+    height: 290px;
+    border: none;
+}
+.projects{
+    background: lightgray;
+    padding-bottom: 40px;
+}
+.projects:nth-child(odd){
+    background: rgba(221, 216, 216, 0.842);
+}
+.projects:hover{
+    background: yellow;
+}
+.projects img{
+    width: 300px;
+    height: 250px;
+}
+.projects .img5{
+    width: 240px;
+}
+.projects div{
+    margin-left: 30px;
+}
+.projects h4{
+    font-size: 21px;
+    padding: 30px 0 8px 0;
+}
+.btnpro{
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid white;
+}
+.btnpro:hover{
+    color: white;
+    background: purple;
+    border: 1px solid purple;
+}
+
+/*pricing*/
+#pricing .container{
+    height: 420px;
+}
+#pricing h4{
+    font-size: 16px;
+    font-weight: bolder;
+}
+.gridprice{
+    display: grid;
+    grid-template-columns: repeat(3,220px);
+    position: relative;
+    top: -20px;
+    right: -230px;
+}
+.price{
+    border: none;
+    padding: 0;
+    position: relative;
+    width: 180px;
+    text-align: center;
+    max-width: 230px;
+}
+.price2{
+    max-width: 230px;
+    border-right: 2px solid lightgray;
+    border-left: 2px solid lightgray;
+}
+.price p{
+    line-height: 20px;
+}
+.price p:nth-child(2){
+    color: grey;
+    padding: 13px;
+}
+#pricing button{
+    width: 120px;
+}
+
+/*video projects*/
+#video{
+    background: purple;
+    height: 500px;
+}
+#video h1{
+    color: white;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: auto;
+    width: 1200px;
+    margin-left: -45px;
+}
+.wrapper::-webkit-scrollbar{
+    width: 0;
+}
+.wrapper .video{
+    width: 500px;
+    height: 300px;
+    margin: 0px 10px;
+}
+.wrapper::before{
+    content: "Video Title";
+    color: white;
+    position: absolute;
+    max-width: 200px;
+    left: 350px;
+    top: 89%;
+    z-index: 20;
+}
+.wrapper::after{
+    content: "0.06";
+    color: white;
+    position: absolute;
+    width: 100px;
+    right: 300px;
+    top: 89%;
+    z-index: 30;
+}
+
+/*team*/
+#team{
+    height: 600px;
+}
+#team h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+#team p{
+    margin-top: -10px;
+}
+.team{
+    border: none;
+    margin-left: 190px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(2,200px);
+}
+.team .container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+.team .image{
+    width: 120px;
+    height: 150px;
+    position: relative;
+    border-radius: 50% ;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.overlay {
+    position: absolute;
+    top: 17px;
+    bottom: 20px;
+    left: 40px;
+    right: 0;
+    height: 119px;
+    width: 120px;
+    opacity: 0;
+    transition: 0.3s ease;
+    background-color: purple;
+    border-radius: 50% ;
+}
+ .overlay:hover{
+    opacity: 0.7;
+}
+.icon {
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.icon img{
+    position: absolute;
+    filter: invert(10%) sepia(80%) saturate(3%) hue-rotate(1deg) brightness(1200%) contrast(80%);
+}
+.icon img:nth-child(1){
+    left: -35px;
+}
+
+  
+
+  /*life*/
+#life{
+    height: 660px;
+    background: rgb(218, 210, 210);
+}
+#life .container {
+    position: relative;
+}
+.mySlides {
+    display: none;
+    position: relative;
+    width: 150%;
+    margin: -12px 290px;
+}
+.cursor{
+    cursor: pointer;
+}
+.prev,.next {
+  cursor: pointer;
+  position: absolute;
+  top: 108%;
+  width: auto;
+  height: 56px;
+  padding: 12px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px 0 0 3px;
+  user-select: none;
+}
+.next {
+    border-radius: 0 3px 3px 0;
+    right: 300px;
+}
+.prev{
+    left: 270px;
+}
+.prev:hover,.next:hover {
+    color: white;
+    background-color: purple ;
+}
+.row1{
+    display: table;
+    max-width: 500px;
+    margin-left: 289px;
+    position: absolute;
+    margin-top: 50px;
+}
+.column {
+    float: left;
+    width: 16.66%;
+}
+.demo {
+    opacity: 0.6;
+}
+.active,.demo:hover {
+  opacity: 1;
+}
+
+/*newsletter*/
+#newsletter{
+    height: 300px;
+}
+.bg-image{
+    position: relative;
+    image-rendering: pixelated;
+    top: -1px;
+    left: -44px;
+}
+.bg-image img{
+    width: 1200px;
+    height: 300px;
+}
+#newsletter h1{
+    color: white;
+    padding: 30px;
+    position: absolute;
+    left: 386px;
+    top: -25px;
+    z-index: 10;
+}
+#newsletter input{
+    position: absolute;
+    left: 308px;
+    top: 57px;
+    width: 380px;
+    padding: 10px;
+    border:1px solid white;
+    border-radius: 2px;
+    margin-top: 30px;
+    z-index: 10;
+}
+#newsletter .button{
+    position: absolute;
+    left: 687px;
+    top: 67px;
+    border-radius: none;
+    z-index: 10;
+}
+
+/*blog*/
+#blog{
+    height: 550px;
+}
+#blog .grid{
+    border: none;
+    left: 177px;
+    grid-template-columns: repeat(3,180px);
+}
+.blog{
+    position: relative;
+    top: -44px;
+    left: 91px;
+    padding: 0;
+    height: 250px;
+    margin-right: -20px;
+    border: none;
+    line-height: none;
+}
+.blog img{
+    width: 155px;
+    height: 90px;
+}
+.blog h4{
+    color: black;
+    padding-top: 2px;
+    font-size: 17px;
+    font-weight: bolder;
+}
+.blog p{
+    margin-bottom: 2px;
+}
+.blog  p:nth-child(3){
+    color: grey;
+    padding: 2px;
+    font-size: 12px;
+}
+.blog button{
+    margin-top: 20px;
+    background: rgb(219, 218, 218);
+    border: 1px solid rgb(221, 218, 218);
+}
+.blog button:hover{
+    background: yellow;
+}
+
+/*contact*/
+#contact{
+    height: 650px;
+}
+#contact img{
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 650px;
+    left: -45px;
+}
+.contact{
+    position: relative;
+    background: yellow;
+    width: 600px;
+    height: 650px;
+    z-index: 10;
+    top: -650px;
+    right: -44px;
+}
+.contact>*{
+    margin-left: 40px;
+}
+.contact h1{
+    position: relative;
+    padding-bottom: 1px;
+    left: -211px;
+    top: -17px;
+}
+.contact label{
+    font-weight: bold;
+}
+.contact input,textarea{
+    width: 300px;
+    background: white;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 5px 0 10px 40px;
+}
+.contact .send{
+    width: 300px;
+    border: 1px solid purple;
+    background: purple;
+    color: white;
+}
+
+/*footer*/
+#footer{
+    height: 350px;
+}
+#footer .grid{
+    border: none;
+    position: absolute;
+    top: 114px;
+    left: 269px;
+    grid-template-columns: repeat(3,206px);
+    text-align: center;
+}
+#footer h4{
+    padding-bottom: 10px;
+}
+#footer p{
+    line-height: 10px;
+}
+
+/*Tablets,iPad's-Screen*/
+@media screen and (max-width:765px) {
+    
+    body{
+        max-width: 765px;
+    }
+    .nav{
+        display: none;
+    }
+    .navbar-toggler-icon{
+        display: inline-flex;
+        z-index: 20;
+    }
+    section{
+        max-width: 565px;
+        margin: 0px auto;
+    }
+    #home{
+        height: 410px;
+    }
+    .carousel-inner{
+        position: absolute;
+        top: -183px;
+        left: -15px;
+    }
+    .carousel-inner img{
+        position: absolute;
+        max-width: 565px;
+        height: 700px;
+    }
+    .ml{
+        margin-left: 30px;
+    }
+    #home div h3{
+        font-size: x-large;
+    }
+    #home div p{
+        margin-left: 45px;
+    }
+    .button{
+        height: 40px;
+        left: 30px;
+        padding: 5px 10px;
+    }
+    /*welcome*/
+    #welcome{
+        height: 1360px;
+    }
+    .welcomeInfo p{
+        margin-left: -140px;
+        margin-top: -40px;
+        width: 350px;
+    }
+    .welcomeInfo img{
+        display: none;
+    }
+    .grid{
+        display: block;
+        position: relative;
+        margin-left: -300px;
+        margin-top: -40px;
+        height:1200px;
+        border: none;
+    }
+    .cards{
+        height: 300px;
+    }
+    .cards div{
+        width: 50px;
+        height: 50px;
+        margin-left: 300px;
+    }
+    .cards h4{
+        margin-top: -50px;
+        padding-bottom: 0px;
+    }
+    .cards button{
+        margin-top: -5px;
+    }
+    /*projects*/
+    #projects{
+        height:1590px
+    }
+    .gridpro{
+        display: grid;
+        grid-template-columns: repeat(2,282.5px);
+        margin-left: -117px;
+    }
+    .projects img,.projects .img5{
+        width: 282.5px;
+    }
+    #pricing .gridprice{
+        margin-left: -260px;
+        grid-template-columns: repeat(3,188px);
+    }
+    /*video projects*/
+    #video .wrapper{
+        width: 565px;
+        margin-left: -27px;
+    }
+    .wrapper video{
+        padding-inline: 20px;
+    }
+    .wrapper::before{
+        left: 40px;
+    }
+    .wrapper::after{
+        left: 500px;
+    }
+    /*team*/
+    .team{
+        max-width: 565px;
+        left: 300px;
+        display: grid;
+        grid-template-columns: repeat(3,188px);
+    }
+    .team div{
+        max-width: 188px;
+    }
+    .overlay{
+        left: 35px;
+    }
+    /*life*/
+    #life .mySlides{
+        left: -285px;
+    }
+    .row1{
+        left: -150px;
+    }
+    .column img{
+        height: 55px;
+    }
+    .prev{
+        left: 100px;
+    }
+    .next{
+        right: 110px;
+    }
+    /*newletter*/
+    #newsletter img{
+        width: 565px;
+        margin-left: 17px;
+    }
+    #newsletter h1{
+        left: 70px;
+    }
+    #newsletter input{
+        left: 30px;
+    }
+    #newsletter button{
+        margin-left: -277px;
+        height: 45px;
+    }
+    /*blog*/
+    #blog .grid{
+        max-width: 565px;
+        display: grid;
+        top: 30px;
+        left: 170px;
+        grid-template-columns: repeat(3,188px);
+    }
+    .blog{
+        max-width: 185px;
+        height: 400px;
+    }
+    .blog h4{
+        margin-top: 20px;
+    }
+    .blog button{
+        margin-top: 10px;
+    }
+    /*contact*/
+    #contact{
+        height: 450px;
+    }
+    #contact img ,.contact{
+        width: 282px;
+        height: 450px;
+    }
+    #contact img{
+        left: -26px;
+    }
+    .contact{
+        left: 28px;
+        top: -450px;
+    }
+    .contact h1{
+        left: -90px;
+        top: -25px;
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: -10px;
+    }
+    .contact >*{
+        margin-left: 10px;
+    }
+    .contact input{
+        width: 200px;
+        height: 20px;
+        margin-left: 10px;
+        margin-top: -30px;  
+    }
+    .contact textarea{
+        width: 200px;
+        height: 80px;
+    }
+    .contact button{
+        max-width: 200px;
+        height: 40px;
+    }
+    /*footer*/
+    #footer{
+        height: 250px;
+    }
+    #footer .grid{
+        display: grid;
+        max-width: 565px;
+        grid-template-columns: repeat(3,180px);
+        text-align: center;
+        left: 10px;
+    }
+    #footer h4{
+        font-size: 22px;
+        padding-bottom: -10pxs;
+    }
+    #footer .grid div{
+        width: 190px;
+        height: 100px;
+        padding: 0px 20px;
+    }
+}
+
+
+/*Mobile Devices*/
+@media screen and (max-width:480px) {
+    section{
+        max-width: 280px;
+    }
+    .nav{
+        display: none;
+    }
+    .navbar-toggler{
+        display: block;
+    }
+    .carousel-inner img,#welcome{
+        max-width: 280px;
+    }
+    .ml{
+        margin-left: -10px;
+    }
+    #home{
+        height: 390px;
+    }
+    #home div p{
+        margin-top: 10px;
+        left: -25px;
+        width: 230px;
+    }
+    #home .button{
+        margin-top: 50px;
+    }
+    /*welcome*/
+    #welcome .container{
+        margin-left: 60px;
+    }
+    #wecome .container h1{
+        font-size: 18px;
+    }
+    .welcomeInfo p{
+        max-width: 230px;
+        margin-left: -200px;
+    }
+    .cards div{
+        margin-left: 219px;
+    }
+    /*projects*/
+    #projects{
+        height: 2600px;
+    }
+    .gridpro{
+        grid-template-columns: 280px;
+        left: 102px;
+    }
+    .projects img{
+        width: 280px;
+    }
+    /*pricing table*/
+    #pricing{
+        height: 1060px;
+    }
+    .gridprice{
+        max-width: 280px;
+        display: block;
+    }
+    .price{
+        max-width: 280px;
+        height: 300px;
+        left: 60px;
+    }
+    .price2{
+        border: none;
+    }
+    .price button{
+        margin-top: -10px;
+    }
+    /*video projects*/
+    #video .wrapper{
+        width: 280px;
+        margin-left: -15px;
+        margin-top: -40px;
+    }
+    .wrapper video{
+        padding-inline: 10px;
+        width: 280px;
+        height: 260px;
+    }
+    .wrapper::before{
+        left: 7px;
+    }
+    .wrapper::after{
+        left: 244px;
+    }
+    /*team*/
+    #team{
+        height: 1450px;
+    }
+    .team{
+        display: block;
+        max-width: 280px;
+    }
+    .team >div{
+        margin-left: 42px;
+    }
+    /*life*/
+    #life{
+        height: 550px;
+    }
+    .mySlides img{
+        max-width: 280px;
+        margin-left: -21px;
+    }
+    .prev{
+        left: 5px;
+    }
+    .next{
+        right: 7px;
+    }
+    .row1{
+        display: list-item;
+        max-width: 197px;
+        margin-left: 190px;
+        margin-top: 42px;
+    }
+    /*newsletter*/
+    #newsletter .bg-image img{
+        max-width: 280px;
+        margin-left: 28px;
+    }
+    #newsletter .container h1{
+        left: -10px;
+    }
+    #newsletter .container input{
+        top: 78px;
+        width: 180px;
+        left: 6px;
+    }
+    #newsletter .container button{
+        margin-left: -501px;
+        margin-top: 41px;
+    }
+    /*blog*/
+    #blog{
+        height: 1360px;
+    }
+    #blog .grid{
+        display: block;
+        max-width: 280px;
+        margin-left: -246px;
+    }
+    /*contact*/
+    #contact{
+        height: 680px;
+    }
+    #contact .container img{
+        max-width: 280px;
+        left: -15px;
+        height: 340px;
+    }
+    #contact .container .contact{
+        height: 400px;
+        top: 1px;
+        left: 16px;
+    }
+    .contact input{
+        margin-left: 10px;
+        margin-top: -30px;  
+    }
+    .contact textarea{
+        height: 50px;
+    }
+    .contact button{
+        height: 30px;
+    }
+    
+    /*footer*/
+    #footer{
+        height: 650px;
+    }
+    #footer .grid{
+        display: block;
+        max-width: 280px;
+        left: 27px;
+    }
+    #footer h4{
+        font-size: 22px;
+        padding-bottom: -10px;
+    }
+    #footer .grid div{
+        width: 190px;
+        height: 173px;
+        padding: 20px 20px;
+    }
+}

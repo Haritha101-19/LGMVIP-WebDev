@@ -6,6 +6,8 @@
 body{
     max-width: 1400px;
     overflow-x: hidden;
+    position: relative;
+    top: 75px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 section{
@@ -15,7 +17,7 @@ section{
     background-color: white;
 }
 #home,.container-fluid,.carousel-item{
-    height: 520px;
+    height: 500px;
 }
 .brand{
     font-size: 30px;
@@ -25,13 +27,16 @@ section{
     margin-left: 250px;
 }
 nav{
-    max-width: 1200px;
+    width: 1200px;
+    position: absolute;
+    left:-15px;
     z-index: 10;
+    top: -62px;
 }
 .nav{
     margin-right: 220px;
 }
-.nav-item .nav-link:visited{
+ul li a:hover{
     color: yellow;
 }
 .navbar-toggler{
@@ -565,6 +570,11 @@ h1{
     
     body{
         max-width: 765px;
+        position: relative;
+    }
+    nav{
+        width: 565px;
+        top: -85px;
     }
     .nav{
         display: none;
@@ -797,6 +807,10 @@ h1{
 @media screen and (max-width:480px) {
     section{
         max-width: 280px;
+    }
+    nav{
+        width: 280px;
+        top: -85px;
     }
     .nav{
         display: none;

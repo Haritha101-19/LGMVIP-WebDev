@@ -1,0 +1,73 @@
+.cardlist{
+    display: grid;
+    grid-template-columns: repeat(3,320px);
+    grid-column-gap: 2px;
+    position: relative;
+    left: 70px;
+}
+.usercard {
+    width: 260px;
+    height: 260px;
+    background:rgba(255,255,255,0.2);
+    margin: 10px 20px;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    backdrop-filter: blur(5px);
+}
+
+.usercard:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.usercard .image {
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 120px;
+    height: 110px;
+    display: flex;
+    margin: 15px auto;
+    box-shadow: 0px 10px 10px #000000;
+}
+
+.cardbody {
+    margin: 20px;
+    text-align: center;
+}
+
+.cardbody h3 {
+    font-weight: 700;
+    color: #DD2476;
+}
+
+.cardbody p {
+    font-size: 15px;
+    color: white;
+}
+
+.button {
+    background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%);
+    width: 110px;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    font-size: 14px;
+    border-radius: 13px;
+}
+
+.button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:650px) {
+    .cardlist{
+        grid-template-columns: 320px;
+        grid-template-rows: repeat(6,320px);
+        left: 10%;
+    }
+}

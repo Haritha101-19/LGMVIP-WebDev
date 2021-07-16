@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  border: 0;
+}
+body{
+  background: linear-gradient(to right,#30cfd0,#330867);
+  overflow-x: hidden;
+}
+.container-fluid{
+  max-width: 100vw;
+  height: 100%;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+nav{
+  width: 100vw;
+  margin-left: -12px;
+  background: linear-gradient(to left,#bc4e9c,#f80759);
+}
+.navbar-brand{
+  font-weight: bolder;
+  font-family: cursive;
+  letter-spacing: 1px;
+}
+.navbar-brand:hover{
+  color:#330867;
+}
+nav .btn{
+  background: #30cfd0;
+  color: #f80759;
+  border-radius: 5px;
+  font-weight: bold;
+}
+nav .btn:hover{
+  color: beige;
+  background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%);
+}
+.containerBody{
+  width: 1355px;
+  height: 100vh;
+  margin-left: -12px;
+}
+.beforecardload h4{
+  position: absolute;
+  padding-top: 10%;
+  font-size: 25px;
+  left: 600px;
+}
+.beforecardload p{
+  position: absolute;
+  padding-top: 15%;
+  font-size: 28px;
+  color: beige;
+  left: 450px;
+}
+
+@media only screen and (max-width:650px){
+  .beforecardload h4{
+    left: 250px;
+  }
+  .beforecardload p{
+    left: 100px;
+  }
+}
